@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora-style.css">
+</head>
+<body>
+    <div class="contenedorCalculadora">
+        <article class = "contenedorDatos">
+            <section class="pantalla">
+                <input type="text" name="" id="pantalla" disabled>
+            </section>
+            <section>
+                <button class="" id="btn1" onclick = "mostrarPantalla(event)">1</button>
+                <button class="" id="btn2"  onclick = "mostrarPantalla(event)">2</button>
+                <button class="" id="btn3" onclick = "mostrarPantalla(event)">3</button>
+                <button class="" id="btn4" onclick = "mostrarPantalla(event)">4</button>
+                <button class="" id="btn5" onclick = "mostrarPantalla(event)">5</button>
+                <button class="" id="btn6" onclick = "mostrarPantalla(event)">6</button>
+                <button class="" id="btn7" onclick = "mostrarPantalla(event)">7</button>
+                <button class="" id="btn8" onclick = "mostrarPantalla(event)">8</button>
+                <button class="" id="btn9" onclick = "mostrarPantalla(event)">9</button>
+                <button class="" id="btn0" onclick = "mostrarPantalla(event)">0</button>
+
+            </section>
+           <section>
+                <button id="btnSuma" onclick="mostrarPantalla(event)">+</button>
+                <button id="btnResta" onclick="mostrarPantalla(event)">-</button>
+                <button id="btnMultiplicacion" onclick="mostrarPantalla(event)">*</button>
+                <button id="btnDivision" onclick="mostrarPantalla(event)">/</button>
+            </section>
+            <section>
+                <!-- Aquí cambiamos el nombre de la función al que definimos en el JS -->
+                <button id="btnCalculo" onclick="mostrarResultadoEnPantalla()">=</button>
+            </section>                    
+        </article>
+    </div>
+    <script src="calculadora-logica.js"> </script>
+</body>
+</html>
